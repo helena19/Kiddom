@@ -8,12 +8,10 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-  <title>Kiddom</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Kiddom</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -24,10 +22,21 @@ Licence URI: http://www.os-templates.com/template-terms
   <link href="layout/styles/jquery-ui.theme.css" rel="stylesheet" type="text/css" media="all">
 
 
+ 
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+ <script src="layout/scripts/jquery.min.js"></script> 
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script-->
+ 
   
   
 </head>
 <body id="top">
+
+
+
+
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -37,16 +46,11 @@ Licence URI: http://www.os-templates.com/template-terms
   <div class="wrapper row0">
     <div id="topbar" class="hoc clear"> 
       <!-- ################################################################################################ -->
-      <div class="fl_left">
-        <ul>
-          <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-          <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-        </ul>
-      </div>
+      
       <div class="fl_right">
         <ul>
           <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-          <li><a href="#">Συνδεση</a></li>
+          <li><a data-toggle="modal" href="#login_overlay">Σύνδεση</a> </li>
           <li><a href="#">Εγγραφη</a></li>
         </ul>
       </div>
@@ -56,6 +60,8 @@ Licence URI: http://www.os-templates.com/template-terms
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
+
+
   <div class="wrapper row1">
     <header id="header" class="hoc clear"> 
       <!-- ################################################################################################ -->
@@ -74,26 +80,15 @@ Licence URI: http://www.os-templates.com/template-terms
               <li><a href="pages/basic-grid.html">Basic Grid</a></li>-->
             </ul>
           </li>
-         <!-- <li><a class="drop" href="#">Προφιλ</a>
-            <ul>
-              <li><a href="#">Δημιουργία Δραστηριότητας</a></li>
-              <li><a class="drop" href="#">Επεξεργασία Προφίλ</a>
-                <ul>
-                  <li><a href="#">Αγορά Πόντων</a></li>
-                  <li><a href="#">Επεξεργασία Στοιχείων</a></li>
-                  <!--<li><a href="#">Level 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Level 2</a></li>
-            </ul>
-          </li>-->
-          <li><a href="#">Σχετικα με εμας</a></li>
+          <li><a href="pages/about.html">Σχετικα με εμας</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
     </header>
   </div>
+
+
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
@@ -109,7 +104,7 @@ Licence URI: http://www.os-templates.com/template-terms
             <footer>
               <form class="group" method="post" action="#">
                
-                  <legend>Newsletter:</legend>
+                  
                   <div class="formdiv">
 					  
 							<input type="text" id=location placeholder="Τοποθεσία">
@@ -127,20 +122,20 @@ Licence URI: http://www.os-templates.com/template-terms
           </article>
         </li>
         <li>
-          <article>
+          <!--article>
             <p>Vulputate</p>
             <h3 class="heading">Rhoncus nisl non</h3>
             <p>Interdum erat ipsum quis leo viverra magna</p>
             <footer><a class="btn inverse" href="#">Fusce efficitur</a></footer>
-          </article>
+          </article-->
         </li>
         <li>
-          <article>
+          <!--article>
             <p>Maecenas</p>
             <h3 class="heading">Diam feugiat tellus</h3>
             <p>Aliquam ante odio at condimentum mauris</p>
             <footer><a class="btn" href="#">Tincidunt etiam</a></footer>
-          </article>
+          </article-->
         </li>
       </ul>
     </div>
@@ -148,6 +143,10 @@ Licence URI: http://www.os-templates.com/template-terms
   </div>
   <!-- ################################################################################################ -->
 </div>
+
+
+
+
 <!-- End Top Background Image Wrapper -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -187,32 +186,6 @@ Licence URI: http://www.os-templates.com/template-terms
 </div>
 
 <div class="wrapper row3">
-
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <section class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
@@ -268,82 +241,75 @@ Licence URI: http://www.os-templates.com/template-terms
         </div>
       </article>
     </div>
-    <!-- ################################################################################################ -->
+    
     <div class="clear"></div>
   </section>
 </div>
+
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<!--<div class="wrapper bgded" style="background-image:url('images/demo/backgrounds/02.png');">
-  <div class="hoc split clear">
-    <section> 
-       ################################################################################################ 
-      <h2 class="heading">Sapien dictum hendrerit</h2>
-      <p class="btmspace-50">Curabitur et sem eu lorem eleifend sollicitudin maecenas tristique felis ac dolor elementum eget molestie sem eleifend suspendisse ut lobortis massa.</p>
-      <article><a href="#"><i class="icon fa fa-odnoklassniki"></i></a>
-        <h6 class="heading font-x1">Velit proin molestie </h6>
-        <p>Dictumst interdum et malesuada fames ac ante ipsum primis in faucibus fusce imperdiet&hellip;</p>
-      </article>
-      <article><a href="#"><i class="icon fa fa-object-ungroup"></i></a>
-        <h6 class="heading font-x1">Sed velit id lacinia</h6>
-        <p>Et ipsum quis finibus donec magna sapien ac lorem sollicitudin id fringilla fermentum&hellip;</p>
-      </article>
-      <article><a href="#"><i class="icon fa fa-signing"></i></a>
-        <h6 class="heading font-x1">Hac habitasse platea</h6>
-        <p>Justo donec blandit diam elit tincidunt lacus nulla arcu quis elementum odio aliquam ut&hellip;</p>
-      </article>
-       ################################################################################################ 
-    </section>
+<!-- ################################################################################################ -->
+
+
+<!--- SYNDESI           .............................................................              -->
+  <div class="modal fade" id="login_overlay">  
+    <div  class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Κλείσιμο</span></button>
+              <h4 class="modal-title" id="myModalLabel">Συνδεση στο KIDDOM</h4>
+              
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  
+                  <div class="logindiv" style="margin:0 auto;">
+                      <div class="well" style="margin-left: 8px margin-right: 8px">
+                          <form class="group" id="loginForm" method="POST" novalidate="novalidate">
+                            
+                              <div class="form-group">
+                                  <label for="username" class="control-label">Όνομα Χρήστη</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Συμπληρώστε το όνομα χρήστη" placeholder="username">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Κωδικός Χρήστη</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Συμπληρώστε τον κωδικό σας">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-error hidden">Λάθος όνομα ή κωδικός χρήστη</div>
+                              
+                              <div  class="form-group" style="display:inline-block">
+                                <div   class="checkbox" >
+                                  <label><input type="checkbox" id="remeber" /> Να με θυμάσαι </label>
+                                 
+                               </div>
+                             </div>
+                              <button type="submit" class="btn btn-success btn-block">Σύνδεση</button>
+                            
+                          </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>-->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!--<div class="wrapper row2">
-  <article class="hoc container clear"> 
-    <!-- ################################################################################################ 
-    <div class="one_quarter first">
-      <h3 class="heading font-x2">Auctor neque ac luctus ex proin sed</h3>
-    </div>
-    <div class="three_quarter">
-      <p class="nospace btmspace-30">Lorem cursus id ultrices lectus mattis cras ut velit ornare blandit erat nec efficitur nisi phasellus pretium lectus eu massa tempor euismod cras porta pulvinar lacus sit.</p>
-      <ul class="nospace group stats">
-        <li><i class="fa fa-3x fa-user-secret"></i>
-          <p>2345</p>
-          <p><a href="#">Laoreet</a></p>
-        </li>
-        <li><i class="fa fa-3x fa-ils"></i>
-          <p>1234</p>
-          <p><a href="#">Elementum</a></p>
-        </li>
-        <li><i class="fa fa-3x fa-fire"></i>
-          <p>345</p>
-          <p><a href="#">Euismod</a></p>
-        </li>
-        <li><i class="fa fa-3x fa-crosshairs"></i>
-          <p>12345</p>
-          <p><a href="#">Curabitur</a></p>
-        </li>
-      </ul>
-    </div>
-    <!-- ################################################################################################ 
-  </article>
-</div>-->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!--<div class="wrapper coloured">
-  <article class="hoc cta clear"> 
-    <!-- ################################################################################################ 
-    <h6 class="three_quarter first">Faucibus ligula at vehicula justo nullam ligula</h6>
-    <footer class="one_quarter"><a class="btn" href="#">Lacus nullam nisi &raquo;</a></footer>
-    <!-- ################################################################################################ 
-  </article>
-</div>-->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
+
+  
+
+
+
+  <!--  ..........................................................................................-->
+  <!--  ..........................................................................................-->
+
+
+
+
+   
 <div class="wrapper row4 bgded overlay" style="background-color:#39475e">
   <footer id="footer" class="hoc clear"> 
     <!-- ################################################################################################ -->
@@ -354,10 +320,6 @@ Licence URI: http://www.os-templates.com/template-terms
       <ul class="faico clear">
         <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
         <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-   <!--     <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>-->
       </ul>
     </div>
     <div class="one_half">
@@ -370,15 +332,15 @@ Licence URI: http://www.os-templates.com/template-terms
         </li>
         <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
         <li><i class="fa fa-fax"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+        <li><i class="fa fa-envelope-o"></i> info@kiddom.com</li>
       </ul>
     </div>
-    <!-- ################################################################################################ -->
   </footer>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
     <!-- ################################################################################################ -->
@@ -391,13 +353,19 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
 
+
+
+
+
+
+<!-- JAVASCRIPTS -->
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
 <script src="layout/scripts/jquery-ui.js"></script>
+
 <script type="text/javascript">
     jQuery(function(){
         jQuery('#datepicker').datepicker({
