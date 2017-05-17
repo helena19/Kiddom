@@ -8,17 +8,31 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>Kiddom</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <title>Kiddom</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+  <link href="layout/styles/jquery-ui.css" rel="stylesheet" type="text/css" media="all">
+  <link href="layout/styles/jquery-ui.structure.css" rel="stylesheet" type="text/css" media="all">
+  <link href="layout/styles/jquery-ui.theme.css" rel="stylesheet" type="text/css" media="all">
+
+
+  
+  
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/index.jpg');"> 
+<div class="bgded overlay" >
   <!-- ################################################################################################ -->
   <div class="wrapper row0">
     <div id="topbar" class="hoc clear"> 
@@ -96,10 +110,12 @@ Licence URI: http://www.os-templates.com/template-terms
               <form class="group" method="post" action="#">
                
                   <legend>Newsletter:</legend>
-                  <div style="display:inline-flex!important">
-					  <input type="text"  placeholder="Τοποθεσία">
-	                  <input type="date"  placeholder="Ημερομηνία">
-	                  <input type="number" name="quantity" placeholder="Άτομα">  
+                  <div class="formdiv">
+					  
+							<input type="text" id=location placeholder="Τοποθεσία">
+
+	                  <input  type="text" id="datepicker" placeholder="Ημερομηνία">
+	                  <input type="text" name="quantity" placeholder="Άτομα" onfocus="(this.type='number')" onblur="(this.type='text')">
 				  	  <button type="submit" title="Αναζήτηση" class="btn btn-default">
 						<i class="fa fa-search">
 							<em>Αναζήτηση</em>
@@ -171,6 +187,32 @@ Licence URI: http://www.os-templates.com/template-terms
 </div>
 
 <div class="wrapper row3">
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
@@ -350,9 +392,51 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
+
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
+<script src="layout/scripts/jquery-ui.js"></script>
+<script type="text/javascript">
+    jQuery(function(){
+        jQuery('#datepicker').datepicker({
+            inline: true,
+            showOtherMonths: true
+        });
+    });
+</script>
+
+<script type=text/javascript>
+   jQuery( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#location" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
 </body>
 </html>

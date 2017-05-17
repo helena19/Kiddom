@@ -21,13 +21,6 @@ File: Layout CSS
 .row4, .row4 a{}
 .row5, .row5 a{}
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100px;
-    }
-}
-
 
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
@@ -363,15 +356,134 @@ table a, #comments a{background-color:inherit;}
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.calcontainer {
+	height: 538px;
+	left: 50%;
+	margin: -255px 0 0 -245px;
+	position: absolute;
+	top: 50%;
+	width: 510px;
+	zoom: 0.5;
+	-moz-transform: scale(0.5);
+}
+
+.calendar {
+	text-align: center;
+}
+
+.calendar header {
+	position: relative;
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #00addf;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #00addf;
+	color: #f9f9f9;
+}
+
+.event {
+	cursor: pointer;
+	position: relative;
+}
+
+.event:after {
+	background: #00addf;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+.group .formdiv{display:flex;}
 
 /* Media Queries
 --------------------------------------------------------------------------------------------------------------- */
-@-ms-viewport{width:device-width;}
+
 
 
 /* Max Wrapper Width - Laptop, Desktop etc.
@@ -405,6 +517,14 @@ table a, #comments a{background-color:inherit;}
 
 	#copyright{}
 	#copyright p:first-of-type{margin-bottom:10px;}
+	.group .formdiv{display:inline-block; width:50%}
+	#pageintro footer input{width:100%; margin:auto auto 2% auto!important;}
+	::-webkit-input-placeholder {
+		text-align: center;
+		font-size: small;
+	}
+	#pageintro footer button {width:100%; margin:0 0 0 0!important;}
+	#pageintro{padding: 0 0 5% 0;}
 }
 
 
