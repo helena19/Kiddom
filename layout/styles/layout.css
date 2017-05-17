@@ -280,7 +280,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#cc834f;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 
 .btn, .btn.inverse:hover, a .icon.fa, a.inverse:hover .icon.fa{color:#FFFFFF; background-color:#cc834f; border-color:#cc834f;}
-.btn:hover, .btn.inverse, a:hover .icon.fa, a.inverse .icon.fa{color:inherit; background-color:transparent; border-color:inherit;}
+.btn:hover, .btn.inverse, a:hover .icon.fa, a.inverse .icon.fa{color:#cc834f; background-color:transparent; border-color:inherit;}
 
 
 /* Rows */
@@ -518,6 +518,7 @@ table {
 	#copyright{}
 	#copyright p:first-of-type{margin-bottom:10px;}
 	.group .formdiv{display:inline-block; width:50%}
+	.group .logindiv{display:grid; width:40%}
 	#pageintro footer input{width:100%; margin:auto auto 2% auto!important;}
 	::-webkit-input-placeholder {
 		text-align: center;
