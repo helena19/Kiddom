@@ -11,7 +11,8 @@ Licence URI: http://www.os-templates.com/template-terms
 <title>Kiddom</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -22,9 +23,7 @@ Licence URI: http://www.os-templates.com/template-terms
   <link href="layout/styles/jquery-ui.theme.css" rel="stylesheet" type="text/css" media="all">
 
 
- 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
- <script src="layout/scripts/jquery.min.js"></script> 
+
 <!--script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script-->
  
@@ -360,15 +359,15 @@ Licence URI: http://www.os-templates.com/template-terms
 
 
 <!-- JAVASCRIPTS -->
+
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
 <script src="layout/scripts/jquery-ui.js"></script>
-
 <script type="text/javascript">
     jQuery(function(){
-        jQuery('#datepicker').datepicker({
+        jQuery($(":input[id^='datepicker']")).datepicker({
             inline: true,
             showOtherMonths: true
         });
@@ -401,7 +400,7 @@ Licence URI: http://www.os-templates.com/template-terms
       "Scala",
       "Scheme"
     ];
-    $( "#location" ).autocomplete({
+    $(":input[id^='location']").autocomplete({
       source: availableTags
     });
   } );
