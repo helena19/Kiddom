@@ -1,3 +1,5 @@
+/*its also used in providerProfile*/
+
 div.tab {
     float: left;
     border: 1px solid #ccc;
@@ -40,7 +42,8 @@ div.tab button.active {
     border-left: none;
     height: 320px;
     display: none;
-    overflow: scroll
+    overflow: scroll;
+    font-color: #f1f1f1;
 }
 
 #user_elements {
