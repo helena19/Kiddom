@@ -1,6 +1,8 @@
 # Kiddom
 Software Technology project, 8th semester
+
 National Kapodistrian University of Athens
+
 Department of Informatics and Telecommunications
 
 Η διαδικτυακή πλατφόρμα Kiddom είναι ένας ιστοχώρος ο οποίος θα συγκεντρώνει σε
